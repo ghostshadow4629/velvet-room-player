@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Orange Black Music Player"
+description = "A distinctive Spotify-inspired web music player with an editorial orange-and-black interface, curated listening sections, and an interactive player bar."
+version = "1.0.0"
+id = "artifacts/orange-black-music-player"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 22798
+
+[services.development]
+run = "pnpm --filter @workspace/orange-black-music-player run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/orange-black-music-player", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/orange-black-music-player/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22798"
+BASE_PATH = "/"
