@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: velvet-room-player
+    runtime: node
+    plan: free
+    buildCommand: corepack enable && pnpm install --frozen-lockfile && pnpm --filter @workspace/orange-black-music-player run build
+    startCommand: pnpm --filter @workspace/orange-black-music-player run serve
+    envVars:
+      - key: BASE_PATH
+        value: /
