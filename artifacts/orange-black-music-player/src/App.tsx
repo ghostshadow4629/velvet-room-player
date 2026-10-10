@@ -58,19 +58,7 @@ const artwork = (background: string, foreground: string, label: string) =>
   `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><rect width="400" height="400" fill="${background}"/><circle cx="335" cy="40" r="170" fill="none" stroke="${foreground}" stroke-opacity=".35" stroke-width="2"/><circle cx="335" cy="40" r="120" fill="none" stroke="${foreground}" stroke-opacity=".3" stroke-width="2"/><circle cx="335" cy="40" r="54" fill="none" stroke="${foreground}" stroke-opacity=".24" stroke-width="1"/><path d="M0 308 Q150 225 400 310 V400 H0Z" fill="${foreground}" fill-opacity=".18"/><text x="28" y="345" fill="${foreground}" font-family="sans-serif" font-size="28" font-weight="700" letter-spacing="2">${label}</text></svg>`)}`;
 
 const tracks: Track[] = [
-  { id: 1, title: 'A New Kind of Love', artist: 'Frou Frou', album: 'Details', length: '4:11', seconds: 251, cover: artwork('#d65d31', '#f7d8a6', 'FROU FROU'), audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3', accent: '#ff592b', glow: '#7a2815' },
-  { id: 2, title: 'The Rip', artist: 'Portishead', album: 'Third', length: '4:29', seconds: 269, cover: artwork('#25211e', '#e6a26d', 'THIRD'), audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3', accent: '#e6a26d', glow: '#493025' },
-  { id: 3, title: 'Nothing Arrived', artist: 'Villagers', album: 'Awayland', length: '3:46', seconds: 226, cover: artwork('#c59673', '#35221a', 'AWAYLAND'), audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3', accent: '#e6b28b', glow: '#5d3727' },
-  { id: 4, title: 'Archangel', artist: 'Burial', album: 'Untrue', length: '3:59', seconds: 239, cover: artwork('#49525a', '#f2b15e', 'UNTRUE'), audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3', accent: '#f2b15e', glow: '#38434a' },
-  { id: 5, title: 'Roads', artist: 'Portishead', album: 'Dummy', length: '5:10', seconds: 310, cover: artwork('#b7492f', '#1e1714', 'DUMMY'), audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3', accent: '#ef7049', glow: '#702516' },
-  { id: 6, title: 'Teardrop', artist: 'Massive Attack', album: 'Mezzanine', length: '5:30', seconds: 330, cover: artwork('#273836', '#e7bc78', 'MEZZANINE'), audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3', accent: '#e7bc78', glow: '#1f4c49' },
-  { id: 7, title: 'Pink + White', artist: 'Frank Ocean', album: 'Blonde', length: '3:04', seconds: 184, cover: artwork('#d58b65', '#fff1cf', 'BLONDE'), audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3', accent: '#ffd0a5', glow: '#6b3b2d' },
-  { id: 8, title: 'Good Days', artist: 'SZA', album: 'SOS', length: '4:39', seconds: 279, cover: artwork('#715d7e', '#f6c27d', 'SOS'), audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3', accent: '#e3a9ff', glow: '#3d2a4c' },
-  { id: 9, title: 'Out of Time', artist: 'The Weeknd', album: 'Dawn FM', length: '3:34', seconds: 214, cover: artwork('#bd4c32', '#ffd086', 'DAWN FM'), audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3', accent: '#ff9870', glow: '#7d251c' },
-  { id: 10, title: 'Ocean Eyes', artist: 'Billie Eilish', album: 'dont smile at me', length: '3:20', seconds: 200, cover: artwork('#5c7280', '#f5d6b3', 'OCEAN EYES'), audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-10.mp3', accent: '#a9d8e8', glow: '#2b4d5a' },
-  { id: 11, title: '505', artist: 'Arctic Monkeys', album: 'Favourite Worst Nightmare', length: '4:13', seconds: 253, cover: artwork('#2a3338', '#e68f50', '505'), audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-11.mp3', accent: '#e68f50', glow: '#23343d' },
-  { id: 12, title: 'Lite Spots', artist: 'KAYTRANADA', album: '99.9%', length: '3:50', seconds: 230, cover: artwork('#ba5b42', '#f8d9a1', '99.9%'), audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-12.mp3', accent: '#ff9a69', glow: '#6e2e26' },
-];
+ 
 
 const artists: Artist[] = [
   { name: 'Portishead', genre: 'Bristol, UK', image: artwork('#26221f', '#f0a06c', 'P') },
