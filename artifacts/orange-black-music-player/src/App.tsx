@@ -58,7 +58,32 @@ const artwork = (background: string, foreground: string, label: string) =>
   `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><rect width="400" height="400" fill="${background}"/><circle cx="335" cy="40" r="170" fill="none" stroke="${foreground}" stroke-opacity=".35" stroke-width="2"/><circle cx="335" cy="40" r="120" fill="none" stroke="${foreground}" stroke-opacity=".3" stroke-width="2"/><circle cx="335" cy="40" r="54" fill="none" stroke="${foreground}" stroke-opacity=".24" stroke-width="1"/><path d="M0 308 Q150 225 400 310 V400 H0Z" fill="${foreground}" fill-opacity=".18"/><text x="28" y="345" fill="${foreground}" font-family="sans-serif" font-size="28" font-weight="700" letter-spacing="2">${label}</text></svg>`)}`;
 
 const tracks: Track[] = [
-https://replit.com/@shadow833/Custom-Orange-Black-Music-Player?mobileWebview=1&forceTheme=replitDark&vBonsai=2.203.2&bonsaiPlatform=ios&themeRevision=2026-07-08T16%253A02%253A10.745Z&errorTrace=e0e10cd0-7e6a-4357-9cee-3d5906eaca6b&locale=en&supportsUpsellBridge=1&tabletWorkspace=1&storeReviewPrompt=1&workspaceIaOverride=headerTab&connectOAuthReturnUrl=replit%253A%252F%252F%252Fconnect-oauth#Public
+  {
+    id: 1,
+    title: 'Roads',
+    artist: 'Portishead',
+    album: 'Dummy',
+    length: '5:02',
+    seconds: 302,
+    cover: artwork('#26221f', '#f0a06c', 'P'),
+    audioUrl: 'https://your-direct-link.com/roads.mp3',
+    accent: '#f0a06c',
+    glow: 'rgba(240,160,108,0.35)',
+  },
+  {
+    id: 2,
+    title: 'Song two',
+    artist: 'Burial',
+    album: 'Untrue',
+    length: '4:10',
+    seconds: 250,
+    cover: artwork('#3f4648', '#f1c478', 'B'),
+    audioUrl: 'https://your-direct-link.com/song2.mp3',
+    accent: '#f1c478',
+    glow: 'rgba(241,196,120,0.35)',
+  },
+];
+
 
 const artists: Artist[] = [
   { name: 'Portishead', genre: 'Bristol, UK', image: artwork('#26221f', '#f0a06c', 'P') },
