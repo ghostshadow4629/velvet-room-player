@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+-import { useEffect, useMemo, useRef, useState } from 'react';
 import {
   Bell,
   ChevronDown,
@@ -66,7 +66,7 @@ const tracks: Track[] = [
     length: '5:02',
     seconds: 302,
     cover: artwork('#26221f', '#f0a06c', 'P'),
-    audioUrl: 'https://your-direct-link.com/roads.mp3',
+    audioUrl: '/artifacts/orange-black-music-player/public/Post Malone_ Swae Lee - Sunflower (Spider-Man_ Int(MP3_128K).mp3',
     accent: '#f0a06c',
     glow: 'rgba(240,160,108,0.35)',
   },
