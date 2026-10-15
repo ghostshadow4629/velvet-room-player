@@ -66,7 +66,7 @@ const tracks: Track[] = [
     length: '5:02',
     seconds: 302,
     cover: artwork('#26221f', '#f0a06c', 'P'),
-    audioUrl: '/artifacts/orange-black-music-player/public/Post Malone_ Swae Lee - Sunflower (Spider-Man_ Int(MP3_128K).mp3',
+    audioUrl: 'https://velvet-room-player-1.onrender.com/artifacts/orange-black-music-player/public/Post Malone_ Swae Lee - Sunflower (Spider-Man_ Int(MP3_128K).mp3',
     accent: '#f0a06c',
     glow: 'rgba(240,160,108,0.35)',
   },
