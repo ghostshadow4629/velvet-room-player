@@ -58,20 +58,19 @@ const artwork = (background: string, foreground: string, label: string) =>
   `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><rect width="400" height="400" fill="${background}"/><circle cx="335" cy="40" r="170" fill="none" stroke="${foreground}" stroke-opacity=".35" stroke-width="2"/><circle cx="335" cy="40" r="120" fill="none" stroke="${foreground}" stroke-opacity=".3" stroke-width="2"/><circle cx="335" cy="40" r="54" fill="none" stroke="${foreground}" stroke-opacity=".24" stroke-width="1"/><path d="M0 308 Q150 225 400 310 V400 H0Z" fill="${foreground}" fill-opacity=".18"/><text x="28" y="345" fill="${foreground}" font-family="sans-serif" font-size="28" font-weight="700" letter-spacing="2">${label}</text></svg>`)}`;
 
 const tracks: Track[] = [
-  { id: 1, title: 'Sunflower', artist: 'Post Malone or something', album: 'Details', length: '4:11', seconds: 251, cover: artwork('#d65d31', '#f7d8a6', 'FROU FROU'), audioUrl: 'https://github.com/ghostshadow4629/velvet-room-player/raw/refs/heads/main/artifacts/orange-black-music-player/public/Post%20Malone_%20Swae%20Lee%20-%20Sunflower%20(Spider-Man_%20Int(MP3_128K).mp3', accent: '#ff592b', glow: '#7a2815' },
-  { id: 2, title: 'No douht', artist: 'ENHYPEN', album: 'Third', length: '4:29', seconds: 269, cover: artwork('#25211e', '#e6a26d', 'THIRD'), audioUrl: 'https://github.com/ghostshadow4629/velvet-room-player/raw/refs/heads/main/artifacts/orange-black-music-player/public/No_Doubt_KLICKAUD.mp3', accent: '#e6a26d', glow: '#493025' },
-  { id: 3, title: 'Beat it', artist: 'Micheal Jackson', album: 'Awayland', length: '3:46', seconds: 226, cover: artwork('#c59673', '#35221a', 'AWAYLAND'), audioUrl: 'https://github.com/ghostshadow4629/velvet-room-player/raw/refs/heads/main/artifacts/orange-black-music-player/public/Michael%20Jackson%20-%20Beat%20It%20(Official%204K%20Video).mp3', accent: '#e6b28b', glow: '#5d3727' }, // hey if you're reading this ghostshadow is bad at geometry dash hahaahahahaahha /j /j /j don't tell him
-  { id: 4, title: 'Archangel', artist: 'Burial', album: 'Untrue', length: '3:59', seconds: 239, cover: artwork('#49525a', '#f2b15e', 'UNTRUE'), audioUrl: 'https://github.com/ghostshadow4629/velvet-room-player/raw/refs/heads/main/artifacts/orange-black-music-player/public/Dubioza%20Kolektiv%20-%20I%20Am%20from%20Bosnia%20-%20Take%20Me%20to%20America%20(Official%20video)%20-%20Dubioza%20kolektiv.mp3', accent: '#f2b15e', glow: '#38434a' }, 
-  { id: 5, title: 'Let me go', artist: 'Daniel Ceasar', album: 'Dummy', length: '5:10', seconds: 310, cover: artwork('#b7492f', '#1e1714', 'DUMMY'), audioUrl: 'https://github.com/ghostshadow4629/velvet-room-player/raw/refs/heads/main/artifacts/orange-black-music-player/public/Daniel%20Caesar%20-%20Let%20Me%20Go%20(Lyric%20Video).mp3', accent: '#ef7049', glow: '#702516' },
-  { id: 6, title: 'Love again', artist: 'Daniel Ceasar', album: 'Mezzanine', length: '5:30', seconds: 330, cover: artwork('#273836', '#e7bc78', 'MEZZANINE'), audioUrl: 'https://github.com/ghostshadow4629/velvet-room-player/raw/refs/heads/main/artifacts/orange-black-music-player/public/Brandy%20x%20Daniel%20Caesar%20-%20%22%20Love%20Again%22%20(Official%20Audio).mp3', accent: '#e7bc78', glow: '#1f4c49' },
-  { id: 7, title: 'Hold me down', artist: 'Daniel Ceasar', album: 'Blonde', length: '3:04', seconds: 184, cover: artwork('#d58b65', '#fff1cf', 'BLONDE'), audioUrl: 'https://github.com/ghostshadow4629/velvet-room-player/raw/refs/heads/main/artifacts/orange-black-music-player/public/Hold%20Me%20Down.mp3', accent: '#ffd0a5', glow: '#6b3b2d' },
+  { id: 1, title: 'A New Kind of Love', artist: 'Frou Frou', album: 'Details', length: '4:11', seconds: 251, cover: artwork('#d65d31', '#f7d8a6', 'FROU FROU'), audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3', accent: '#ff592b', glow: '#7a2815' },
+  { id: 2, title: 'The Rip', artist: 'Portishead', album: 'Third', length: '4:29', seconds: 269, cover: artwork('#25211e', '#e6a26d', 'THIRD'), audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3', accent: '#e6a26d', glow: '#493025' },
+  { id: 3, title: 'Nothing Arrived', artist: 'Villagers', album: 'Awayland', length: '3:46', seconds: 226, cover: artwork('#c59673', '#35221a', 'AWAYLAND'), audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3', accent: '#e6b28b', glow: '#5d3727' },
+  { id: 4, title: 'Archangel', artist: 'Burial', album: 'Untrue', length: '3:59', seconds: 239, cover: artwork('#49525a', '#f2b15e', 'UNTRUE'), audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3', accent: '#f2b15e', glow: '#38434a' },
+  { id: 5, title: 'Roads', artist: 'Portishead', album: 'Dummy', length: '5:10', seconds: 310, cover: artwork('#b7492f', '#1e1714', 'DUMMY'), audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3', accent: '#ef7049', glow: '#702516' },
+  { id: 6, title: 'Teardrop', artist: 'Massive Attack', album: 'Mezzanine', length: '5:30', seconds: 330, cover: artwork('#273836', '#e7bc78', 'MEZZANINE'), audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3', accent: '#e7bc78', glow: '#1f4c49' },
+  { id: 7, title: 'Pink + White', artist: 'Frank Ocean', album: 'Blonde', length: '3:04', seconds: 184, cover: artwork('#d58b65', '#fff1cf', 'BLONDE'), audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3', accent: '#ffd0a5', glow: '#6b3b2d' },
   { id: 8, title: 'Good Days', artist: 'SZA', album: 'SOS', length: '4:39', seconds: 279, cover: artwork('#715d7e', '#f6c27d', 'SOS'), audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3', accent: '#e3a9ff', glow: '#3d2a4c' },
   { id: 9, title: 'Out of Time', artist: 'The Weeknd', album: 'Dawn FM', length: '3:34', seconds: 214, cover: artwork('#bd4c32', '#ffd086', 'DAWN FM'), audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3', accent: '#ff9870', glow: '#7d251c' },
   { id: 10, title: 'Ocean Eyes', artist: 'Billie Eilish', album: 'dont smile at me', length: '3:20', seconds: 200, cover: artwork('#5c7280', '#f5d6b3', 'OCEAN EYES'), audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-10.mp3', accent: '#a9d8e8', glow: '#2b4d5a' },
   { id: 11, title: '505', artist: 'Arctic Monkeys', album: 'Favourite Worst Nightmare', length: '4:13', seconds: 253, cover: artwork('#2a3338', '#e68f50', '505'), audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-11.mp3', accent: '#e68f50', glow: '#23343d' },
   { id: 12, title: 'Lite Spots', artist: 'KAYTRANADA', album: '99.9%', length: '3:50', seconds: 230, cover: artwork('#ba5b42', '#f8d9a1', '99.9%'), audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-12.mp3', accent: '#ff9a69', glow: '#6e2e26' },
 ];
-
 
 const artists: Artist[] = [
   { name: 'Portishead', genre: 'Bristol, UK', image: artwork('#26221f', '#f0a06c', 'P') },
@@ -128,7 +127,7 @@ function App() {
   const [playlistOpen, setPlaylistOpen] = useState(false);
   const [playlistTarget, setPlaylistTarget] = useState<number | null>(null);
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
-  const [selectedPlaylist, setSelectedPlaylist] = useState('Night drive, no destination');
+  const [selectedPlaylistId, setSelectedPlaylistId] = useState<string | null>(null);
   const [playlistTracks, setPlaylistTracks] = useState<PlaylistTracks>(() => readStored('velvet-room-playlists', {
     'night-drive': [1, 2, 5, 7],
     'after-hours': [4, 6, 8, 9],
@@ -143,13 +142,22 @@ function App() {
   const playNextRef = useRef<() => void>(() => undefined);
 
   const currentTrack = tracks.find((track) => track.id === currentId) ?? tracks[0];
+  const selectedPlaylist = playlists.find((playlist) => playlist.id === selectedPlaylistId) ?? null;
+  const pageTracks = useMemo(() => {
+    if (activeNav === 'Liked songs') return tracks.filter((track) => liked.includes(track.id));
+    if (activeNav === 'Playlists' && selectedPlaylistId) {
+      const playlistIds = playlistTracks[selectedPlaylistId] ?? [];
+      return playlistIds.map((id) => tracks.find((track) => track.id === id)).filter((track): track is Track => Boolean(track));
+    }
+    return tracks;
+  }, [activeNav, liked, playlistTracks, selectedPlaylistId]);
   const filteredTracks = useMemo(() => {
     const normalized = query.trim().toLowerCase();
-    if (!normalized) return tracks;
-    return tracks.filter((track) =>
+    if (!normalized) return pageTracks;
+    return pageTracks.filter((track) =>
       [track.title, track.artist, track.album].some((value) => value.toLowerCase().includes(normalized)),
     );
-  }, [query]);
+  }, [pageTracks, query]);
   const queueTracks = queued
     .map((id) => tracks.find((track) => track.id === id))
     .filter((track): track is Track => Boolean(track));
@@ -364,14 +372,57 @@ function App() {
     setPlaylistTarget(null);
   };
 
+  const navigateTo = (section: string) => {
+    setActiveNav(section);
+    setSelectedPlaylistId(null);
+    setQuery('');
+    setMobileNavOpen(false);
+  };
+
+  const openPlaylist = (playlistId: string) => {
+    setActiveNav('Playlists');
+    setSelectedPlaylistId(playlistId);
+  };
+
+  const playPlaylist = (playlistId: string) => {
+    const ids = playlistTracks[playlistId] ?? [];
+    if (!ids.length) return;
+    setQueued(ids.slice(1));
+    chooseTrack(ids[0]);
+  };
+
+  const toggleTrackPlayback = (id: number) => {
+    if (id === currentId) setPlaying((value) => !value);
+    else chooseTrack(id);
+  };
+
+  const removeFromPlaylist = (playlistId: string, trackId: number) => {
+    setPlaylistTracks((current) => ({
+      ...current,
+      [playlistId]: (current[playlistId] ?? []).filter((id) => id !== trackId),
+    }));
+  };
+
   const paletteStyle = { '--accent-color': currentTrack.accent, '--accent-glow': currentTrack.glow } as React.CSSProperties;
   const repeatLabel = repeatMode === 'one' ? 'Repeat current song' : repeatMode === 'all' ? 'Repeat playlist' : 'Repeat off';
+  const pageTitle = activeNav === 'Playlists' && selectedPlaylist ? selectedPlaylist.title : activeNav;
+  const trackSectionTitle = query
+    ? 'Search results'
+    : activeNav === 'Home'
+      ? 'Recently in rotation'
+      : activeNav === 'Liked songs'
+        ? 'Your liked songs'
+        : activeNav === 'Playlists'
+          ? 'Songs in this playlist'
+          : 'Tracks in your listening room';
+  const showTrackList = activeNav !== 'Playlists' || Boolean(selectedPlaylistId);
+  const trackDuration = filteredTracks.reduce((total, track) => total + track.seconds, 0);
 
   return (
     <div className="app-shell" data-theme={theme} style={paletteStyle}>
       <div className="ambient-gradient" aria-hidden="true" />
       <aside className="sidebar" aria-label="Primary navigation">
-        <a className="brand" href="/" onClick={(event) => { event.preventDefault(); setActiveNav('Home'); }} data-testid="link-brand">
+        <a className="brand" href="/" onClick={(event) => { event.preventDefault(); navigateTo('Home'); }} data-testid="link-brand">
           <span className="brand-mark" aria-hidden="true" />
           <span className="brand-name">velvet<em>/</em>room</span>
         </a>
@@ -383,15 +434,15 @@ function App() {
               { label: 'Discover', icon: Compass },
               { label: 'Your library', icon: Library },
             ].map(({ label, icon: Icon }) => (
-              <button className={`nav-item ${activeNav === label ? 'active' : ''}`} onClick={() => setActiveNav(label)} key={label} data-testid={`button-nav-${label.toLowerCase().replaceAll(' ', '-')}`}>
+              <button className={`nav-item ${activeNav === label ? 'active' : ''}`} onClick={() => navigateTo(label)} key={label} data-testid={`button-nav-${label.toLowerCase().replaceAll(' ', '-')}`}>
                 <Icon /> <span>{label}</span>
               </button>
             ))}
           </div>
           <div className="nav-section">
             <div className="nav-section-label">Your stuff</div>
-            <button className={`nav-item ${activeNav === 'Liked songs' ? 'active' : ''}`} onClick={() => setActiveNav('Liked songs')} data-testid="button-nav-liked-songs"><Heart /> <span>Liked songs</span></button>
-            <button className={`nav-item ${activeNav === 'Playlists' ? 'active' : ''}`} onClick={() => setActiveNav('Playlists')} data-testid="button-nav-playlists"><ListMusic /> <span>Playlists</span></button>
+            <button className={`nav-item ${activeNav === 'Liked songs' ? 'active' : ''}`} onClick={() => navigateTo('Liked songs')} data-testid="button-nav-liked-songs"><Heart /> <span>Liked songs</span></button>
+            <button className={`nav-item ${activeNav === 'Playlists' ? 'active' : ''}`} onClick={() => navigateTo('Playlists')} data-testid="button-nav-playlists"><ListMusic /> <span>Playlists</span></button>
           </div>
         </nav>
         <div className="sidebar-bottom">
@@ -405,7 +456,7 @@ function App() {
 
       <main className="main-area">
         <header className="topbar">
-          <div className="topbar-title">Home <span>/</span> <b>{activeNav}</b></div>
+          <div className="topbar-title">velvet/room <span>/</span> <b>{pageTitle}</b></div>
           <div className="top-actions">
             <label className="search-box" data-testid="search-library">
               <Search size={15} />
@@ -420,7 +471,7 @@ function App() {
         </header>
 
         <div className="content">
-          <section className="hero" aria-labelledby="welcome-heading">
+          {activeNav === 'Home' && <section className="hero" aria-labelledby="welcome-heading">
             <div className="hero-copy">
               <div className="eyebrow">Thursday, 11:48 pm · listening room open</div>
               <h1 id="welcome-heading">Make room<br />for <em>the good stuff.</em></h1>
@@ -435,15 +486,60 @@ function App() {
               <div className="hero-disc"><img src={currentTrack.cover} alt="" /></div>
               <div className="stamp-bottom"><strong>{currentTrack.title}</strong><span>{currentTrack.artist} · {currentTrack.album}</span></div>
             </button>
-          </section>
+          </section>}
 
-          <section aria-labelledby="recent-heading">
+          {activeNav !== 'Home' && <section className="page-intro" aria-labelledby="page-heading">
+            <div>
+              <div className="eyebrow">{activeNav === 'Playlists' && selectedPlaylist ? 'Your playlists' : 'Your listening room'}</div>
+              <h1 id="page-heading">{pageTitle}</h1>
+              <p>{activeNav === 'Discover'
+                ? 'Find a familiar favorite or start somewhere unexpected.'
+                : activeNav === 'Liked songs'
+                  ? `${liked.length} saved ${liked.length === 1 ? 'track' : 'tracks'} that you want to keep close.`
+                  : activeNav === 'Your library'
+                    ? 'Everything in your listening room, ready when you are.'
+                    : activeNav === 'Playlists' && selectedPlaylist
+                      ? `${playlistTracks[selectedPlaylist.id]?.length ?? 0} tracks · ${formatTime(trackDuration)}`
+                      : 'Choose a collection and make it your next listening session.'}</p>
+            </div>
+            {activeNav === 'Playlists' && selectedPlaylist && <div className="page-actions">
+              <button className="subtle-button" onClick={() => setSelectedPlaylistId(null)}><ChevronRight size={14} /> All playlists</button>
+              <button className="accent-button" onClick={() => playPlaylist(selectedPlaylist.id)} disabled={!playlistTracks[selectedPlaylist.id]?.length}><Play size={14} fill="currentColor" /> Play playlist</button>
+            </div>}
+          </section>}
+
+          {activeNav === 'Discover' && <section aria-labelledby="discover-artists-heading" className="page-section">
+            <div className="section-heading"><h2 id="discover-artists-heading">Artists to spend time with</h2></div>
+            <div className="artist-grid">
+              {artists.map((artist) => (
+                <button className={`artist-card ${query === artist.name ? 'is-selected' : ''}`} key={artist.name} onClick={() => setQuery(query === artist.name ? '' : artist.name)} data-testid={`button-artist-${artist.name.toLowerCase().replaceAll(' ', '-')}`}>
+                  <img className="artist-image" src={artist.image} alt="" /><strong>{artist.name}</strong><span>{artist.genre}</span>
+                </button>
+              ))}
+            </div>
+          </section>}
+
+          {activeNav === 'Playlists' && !selectedPlaylist && <section aria-labelledby="all-playlists-heading" className="page-section">
+            <div className="section-heading"><h2 id="all-playlists-heading">Your playlists</h2></div>
+            <div className="playlists">
+              {playlists.map((playlist) => (
+                <button className={`playlist-card ${playlist.className}`} key={playlist.id} onClick={() => openPlaylist(playlist.id)} data-testid={`button-playlist-${playlist.id}`}>
+                  <div className="eyebrow">{playlist.eyebrow}</div><h3>{playlist.title}</h3><p>{playlistTracks[playlist.id]?.length ?? 0} saved tracks</p><span className="record-art" aria-hidden="true" />
+                </button>
+              ))}
+            </div>
+          </section>}
+
+          {showTrackList && <section aria-labelledby="recent-heading" className="page-section">
             <div className="section-heading">
-              <h2 id="recent-heading">{query ? 'Search results' : 'Recently in rotation'}</h2>
-              <button className="text-button" onClick={() => setQuery('')} data-testid="button-clear-search">{query ? 'Clear search' : 'View all'} <ChevronRight size={12} style={{ display: 'inline', verticalAlign: '-2px' }} /></button>
+              <div>
+                <h2 id="recent-heading">{trackSectionTitle}</h2>
+                {activeNav === 'Playlists' && selectedPlaylist && <span className="section-caption">{filteredTracks.length} tracks · {formatTime(trackDuration)}</span>}
+              </div>
+              <button className="text-button" onClick={() => query ? setQuery('') : navigateTo(activeNav === 'Home' ? 'Your library' : 'Discover')} data-testid="button-clear-search">{query ? 'Clear search' : activeNav === 'Home' ? 'View all tracks' : 'Browse music'} <ChevronRight size={12} style={{ display: 'inline', verticalAlign: '-2px' }} /></button>
             </div>
             {filteredTracks.length ? (
-              <div className="recent-layout">
+              <div className={activeNav === 'Home' ? 'recent-layout' : 'library-track-layout'}>
                 <div className="track-list" role="list" data-testid="track-list">
                   {filteredTracks.map((track, index) => (
                     <div className={`track-row ${track.id === currentId ? 'is-playing' : ''}`} role="listitem" key={track.id} data-testid={`row-track-${track.id}`}>
@@ -451,7 +547,7 @@ function App() {
                       <div className="track-main">
                         <span className="track-cover-wrap">
                           <img className="track-cover" src={track.cover} alt="" />
-                          <button className="play-tiny" onClick={() => chooseTrack(track.id)} aria-label={`${track.id === currentId && playing ? 'Pause' : 'Play'} ${track.title}`} data-testid={`button-play-track-${track.id}`}>
+                          <button className="play-tiny" onClick={() => toggleTrackPlayback(track.id)} aria-label={`${track.id === currentId && playing ? 'Pause' : 'Play'} ${track.title}`} data-testid={`button-play-track-${track.id}`}>
                             {track.id === currentId && playing ? <Pause /> : <Play />}
                           </button>
                         </span>
@@ -463,11 +559,12 @@ function App() {
                         <button className={`icon-button heart-button ${liked.includes(track.id) ? 'liked' : ''}`} onClick={() => toggleLiked(track.id)} aria-label={`${liked.includes(track.id) ? 'Remove from' : 'Add to'} liked songs`} data-testid={`button-like-track-${track.id}`}><Heart size={15} fill={liked.includes(track.id) ? 'currentColor' : 'none'} /></button>
                         <button className="icon-button row-action" onClick={() => openPlaylistPicker(track.id)} aria-label={`Add ${track.title} to playlist`} data-testid={`button-add-playlist-${track.id}`}><ListPlus size={15} /></button>
                         <button className={`icon-button row-action ${queued.includes(track.id) ? 'queued' : ''}`} onClick={() => toggleQueue(track.id)} aria-label={`${queued.includes(track.id) ? 'Remove from' : 'Add to'} queue`} data-testid={`button-queue-track-${track.id}`}><Plus size={15} /></button>
+                        {activeNav === 'Playlists' && selectedPlaylist && <button className="icon-button row-action danger-button" onClick={() => removeFromPlaylist(selectedPlaylist.id, track.id)} aria-label={`Remove ${track.title} from playlist`} data-testid={`button-remove-playlist-track-${track.id}`}><Trash2 size={15} /></button>}
                       </div>
                     </div>
                   ))}
                 </div>
-                <aside className="queue-card">
+                {activeNav === 'Home' && <aside className="queue-card">
                   <div className="eyebrow">Up next · {queueTracks.length} tracks</div>
                   <h3>Keep the<br />night moving.</h3>
                   <p>Your queue is a loose thread. Pull it.</p>
@@ -478,46 +575,51 @@ function App() {
                     {!queueTracks.length && <div className="queue-line"><span>Queue is clear</span><strong>Add a track</strong></div>}
                   </div>
                   <button className="queue-link" onClick={() => setQueueOpen(true)}><ListMusic size={13} /> Manage play queue <ChevronRight size={13} /></button>
-                </aside>
+                </aside>}
               </div>
             ) : (
-              <div className="empty-state" data-testid="empty-search-state">Nothing in the room matches “{query}”. Try an artist, album, or track.</div>
+              <div className="empty-state" data-testid="empty-search-state">
+                {activeNav === 'Liked songs' && !query ? <><Heart size={20} /><strong>No liked songs yet</strong><span>Tap the heart beside any track to save it here.</span><button className="subtle-button" onClick={() => navigateTo('Discover')}>Explore music</button></>
+                  : activeNav === 'Playlists' && selectedPlaylist && !query ? <><ListMusic size={20} /><strong>This playlist is empty</strong><span>Add tracks from your library or discover page.</span><button className="subtle-button" onClick={() => navigateTo('Discover')}>Find tracks</button></>
+                    : <>Nothing in the room matches “{query}”. Try an artist, album, or track.</>}
+              </div>
             )}
-          </section>
+          </section>}
 
-          <section aria-labelledby="playlists-heading">
-            <div className="section-heading"><h2 id="playlists-heading">A few good places to start</h2><button className="text-button" onClick={() => setActiveNav('Playlists')} data-testid="button-view-playlists">All playlists <ChevronRight size={12} style={{ display: 'inline', verticalAlign: '-2px' }} /></button></div>
+          {activeNav === 'Home' && <section aria-labelledby="playlists-heading" className="page-section">
+            <div className="section-heading"><h2 id="playlists-heading">A few good places to start</h2><button className="text-button" onClick={() => navigateTo('Playlists')} data-testid="button-view-playlists">All playlists <ChevronRight size={12} style={{ display: 'inline', verticalAlign: '-2px' }} /></button></div>
             <div className="playlists">
               {playlists.map((playlist) => (
-                <button className={`playlist-card ${playlist.className}`} key={playlist.id} onClick={() => { setSelectedPlaylist(playlist.title); setQueued(playlistTracks[playlist.id] ?? []); }} data-testid={`button-playlist-${playlist.id}`}>
-                  <div className="eyebrow">{playlist.eyebrow}</div><h3>{playlist.title}</h3><p>{selectedPlaylist === playlist.title ? 'Selected · ' : ''}{playlist.count}</p><span className="record-art" aria-hidden="true" />
+                <button className={`playlist-card ${playlist.className}`} key={playlist.id} onClick={() => openPlaylist(playlist.id)} data-testid={`button-playlist-${playlist.id}`}>
+                  <div className="eyebrow">{playlist.eyebrow}</div><h3>{playlist.title}</h3><p>{playlistTracks[playlist.id]?.length ?? 0} saved tracks</p><span className="record-art" aria-hidden="true" />
                 </button>
               ))}
             </div>
-          </section>
+          </section>}
 
-          <section aria-labelledby="artists-heading">
-            <div className="section-heading"><h2 id="artists-heading">Artists to spend time with</h2><button className="text-button" onClick={() => setActiveNav('Discover')} data-testid="button-view-artists">Browse artists <ChevronRight size={12} style={{ display: 'inline', verticalAlign: '-2px' }} /></button></div>
+          {activeNav === 'Home' && <section aria-labelledby="artists-heading" className="page-section">
+            <div className="section-heading"><h2 id="artists-heading">Artists to spend time with</h2><button className="text-button" onClick={() => navigateTo('Discover')} data-testid="button-view-artists">Browse artists <ChevronRight size={12} style={{ display: 'inline', verticalAlign: '-2px' }} /></button></div>
             <div className="artist-grid">
               {artists.map((artist) => (
-                <button className="artist-card" key={artist.name} onClick={() => setQuery(artist.name)} data-testid={`button-artist-${artist.name.toLowerCase().replaceAll(' ', '-')}`}>
+                <button className="artist-card" key={artist.name} onClick={() => { navigateTo('Discover'); setQuery(artist.name); }} data-testid={`button-artist-${artist.name.toLowerCase().replaceAll(' ', '-')}`}>
                   <img className="artist-image" src={artist.image} alt="" /><strong>{artist.name}</strong><span>{artist.genre}</span>
                 </button>
               ))}
             </div>
-          </section>
+          </section>}
         </div>
       </main>
 
       {mobileNavOpen && (
         <div className="mobile-nav" aria-label="Mobile navigation">
           {[
-            { label: 'Home', icon: Home },
-            { label: 'Discover', icon: Compass },
-            { label: 'Library', icon: Library },
-            { label: 'Liked', icon: Heart },
-          ].map(({ label, icon: Icon }) => (
-            <button className={activeNav === label || (label === 'Library' && activeNav === 'Your library') ? 'active' : ''} key={label} onClick={() => { setActiveNav(label === 'Library' ? 'Your library' : label); setMobileNavOpen(false); }} data-testid={`button-mobile-nav-${label.toLowerCase()}`}><Icon /><span>{label}</span></button>
+            { label: 'Home', section: 'Home', icon: Home },
+            { label: 'Discover', section: 'Discover', icon: Compass },
+            { label: 'Library', section: 'Your library', icon: Library },
+            { label: 'Liked', section: 'Liked songs', icon: Heart },
+            { label: 'Playlists', section: 'Playlists', icon: ListMusic },
+          ].map(({ label, section, icon: Icon }) => (
+            <button className={activeNav === section ? 'active' : ''} key={label} onClick={() => navigateTo(section)} data-testid={`button-mobile-nav-${label.toLowerCase()}`}><Icon /><span>{label}</span></button>
           ))}
           <button onClick={() => setMobileNavOpen(false)} aria-label="Close menu" data-testid="button-close-mobile-menu"><X /><span>Close</span></button>
         </div>
