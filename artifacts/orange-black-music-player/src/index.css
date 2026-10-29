@@ -477,3 +477,42 @@ button { cursor: pointer; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; }
 }
+
+/* Functional library views */
+.page-section { margin-top: 34px; }
+.page-intro {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin: 4px 0 34px;
+  padding: 28px 30px;
+  border: 1px solid color-mix(in srgb, var(--accent-color) 21%, #332c28);
+  border-radius: 14px;
+  background: linear-gradient(115deg, color-mix(in srgb, var(--accent-glow) 32%, #12100f), #12100f 66%);
+}
+.page-intro h1 { margin: 8px 0 5px; color: #f8f2ed; font-size: clamp(34px, 5vw, 54px); letter-spacing: -.065em; line-height: .98; }
+.page-intro p { margin: 0; color: #a89a91; font-size: 13px; }
+.page-actions { display: flex; align-items: center; gap: 9px; flex-shrink: 0; }
+.page-actions .subtle-button svg { transform: rotate(180deg); }
+.section-caption { display: block; margin-top: 5px; color: #8e8078; font: 10px var(--app-font-mono); }
+.library-track-layout { max-width: 1050px; }
+.page-section .playlists { margin-bottom: 0; }
+.artist-card.is-selected .artist-image { outline: 2px solid var(--accent-color); outline-offset: 4px; filter: saturate(1); }
+.empty-state { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.empty-state strong { color: #f4eae3; font-size: 15px; }
+.empty-state span { color: #a3a3a3; font-size: 12px; }
+.empty-state .subtle-button { margin-top: 5px; }
+[data-theme="light"] .page-intro { background: linear-gradient(115deg, color-mix(in srgb, var(--accent-glow) 20%, #e9dfd7), #e9dfd7 68%); border-color: #d0c0b5; }
+[data-theme="light"] .page-intro h1 { color: #241d19; }
+[data-theme="light"] .page-intro p, [data-theme="light"] .section-caption { color: #786c64; }
+[data-theme="light"] .empty-state strong { color: #241d19; }
+@media (max-width: 720px) {
+  .page-intro { display: block; margin: 0 0 26px; padding: 22px 18px; }
+  .page-intro h1 { font-size: 38px; }
+  .page-actions { margin-top: 18px; flex-wrap: wrap; }
+  .page-section { margin-top: 27px; }
+  .mobile-nav { left: 5px; right: 5px; gap: 0; padding: 0 3px; }
+  .mobile-nav button { flex: 1 1 0; min-width: 0; font-size: 7px; }
+  .mobile-nav svg { width: 14px; height: 14px; }
+}
